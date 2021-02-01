@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee204c31-955c-4a92-af44-b2b5b43a8fd4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Leetcode.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2-两数相加.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/3-无重复字符的最长子串.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/去掉连续的字符输出.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-两数之和.js" beforeDir="false" afterPath="$PROJECT_DIR$/1-两数之和.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7-整数反转.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,11 +39,14 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
-  <component name="RunManager" selected="Node.js.去掉连续的字符输出.js">
+  <component name="RunManager" selected="Node.js.7-整数反转.js">
     <configuration name="1-两数之和.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/1-两数之和.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="3-无重复字符的最长子串.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/3-无重复字符的最长子串.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="7-整数反转.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/7-整数反转.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="去掉连续的字符输出.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/去掉连续的字符输出.js" working-dir="$PROJECT_DIR$">
@@ -59,6 +54,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.7-整数反转.js" />
         <item itemvalue="Node.js.去掉连续的字符输出.js" />
         <item itemvalue="Node.js.3-无重复字符的最长子串.js" />
         <item itemvalue="Node.js.1-两数之和.js" />
@@ -75,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612165191070</updated>
-      <workItem from="1612165192240" duration="6760000" />
+      <workItem from="1612165192240" duration="9977000" />
     </task>
     <servers />
   </component>
@@ -87,22 +83,22 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1612165199846" />
-    <state width="1500" height="221" key="GridCell.Tab.0.bottom" timestamp="1612173562054">
+    <state width="1500" height="221" key="GridCell.Tab.0.bottom" timestamp="1612176474723">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1500" height="221" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1612173562054" />
-    <state width="1500" height="221" key="GridCell.Tab.0.center" timestamp="1612173562054">
+    <state width="1500" height="221" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1612176474723" />
+    <state width="1500" height="221" key="GridCell.Tab.0.center" timestamp="1612176474723">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1500" height="221" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1612173562054" />
-    <state width="1500" height="221" key="GridCell.Tab.0.left" timestamp="1612173562054">
+    <state width="1500" height="221" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1612176474723" />
+    <state width="1500" height="221" key="GridCell.Tab.0.left" timestamp="1612176474723">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1500" height="221" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1612173562054" />
-    <state width="1500" height="221" key="GridCell.Tab.0.right" timestamp="1612173562054">
+    <state width="1500" height="221" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1612176474723" />
+    <state width="1500" height="221" key="GridCell.Tab.0.right" timestamp="1612176474723">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1500" height="221" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1612173562054" />
+    <state width="1500" height="221" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1612176474723" />
     <state width="1500" height="274" key="GridCell.Tab.1.bottom" timestamp="1612169972784">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
