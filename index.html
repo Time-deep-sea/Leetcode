@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+</head>
+<body>
+<img id="image" src="./01.jpg" width="300" height="400"><br>
+<table id="table" border="1">
+    <tr>
+        <td>node_id</td>
+        <td>login</td>
+        <td>id</td>
+    </tr>
+</table>
+<button id="btn">点我一下</button>
+</body>
+<script type="text/javascript">
+    const btn = document.getElementById("btn");
+    const table = $("#table");
+    // const btn = $("#btn");
+    // btn.onclick=function(){
+    //     $.ajax({
+    //         //请求方式
+    //         type : "get",
+    //         //请求地址
+    //         url : "https://yesno.wtf/api",
+    //         //请求成功
+    //         success : function(result) {
+    //             console.log(result);
+    //             $("#image").attr("src",image)
+    //         },
+    //         //请求失败，包含具体的错误信息
+    //         error : function(error){
+    //             console.log(error);
+    //         }
+    //     });
+    // }
+    btn.onclick = function(){
+        $.ajax({
+            //请求方式
+            type : "get",
+            //请求地址
+            url : "https://api.github.com/users",
+            //请求成功
+            success : function(result) {
+                console.log(result);
+                for(i in result){
+                    let tr;
+                    tr='<td>'+result[i].node_id+'</td>'+'<td>'+result[i].login+'</td>'+'<td>'+result[i].id+'</td>'
+                    table.append('<tr>'+tr+'</tr>')
+                }
+            },
+            //请求失败，包含具体的错误信息
+            error : function(error){
+                console.log(error);
+            }
+        });
+
+    }
+</script>
+</html>
