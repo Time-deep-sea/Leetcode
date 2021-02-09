@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>水平垂直均居中</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+        }
+        .father1{
+            width: 100%;
+            height: 300px;
+            position: relative;
+            background: lightblue;
+            margin-bottom: 5px;
+        }
+        .son1{
+            width: 150px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;;
+            left: 0;
+            margin: auto;
+            background: darkcyan;
+        }
+        .father2{
+            width: 100%;
+            height: 300px;
+            position: absolute;
+            background: bisque;
+            margin-bottom: 5px;
+        }
+        .son2{
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            position: relative;
+            left: 50%;
+            top: 50%;
+            margin: -50px 0 0 -50px;
+            background: darkturquoise;
+            line-height: 100px;
+        }
+        .father3{
+            width: 100%;
+            height: 300px;
+            position: relative;
+            background: cornflowerblue;
+            margin-bottom: 5px;
+        }
+        .son3{
+            position: absolute;
+            background: lightblue;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: cadetblue;
+        }
+        .father4{
+            width: 100%;
+            height: 300px;
+            background: gainsboro;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .son4{
+            background: cadetblue;
+        }
+    </style>
+</head>
+<body>
+<!--未知高度和宽度的元素-->
+<!--1、父元素相对定位;子元素绝对定位，left: 50%; top: 50%; transform: translateX(-50%) translateY(-50%);-->
+<div class="father3">
+    <div class="son3">我是块级元素3</div>
+</div>
+<!--2、使用flex:父元素flex定位，justify-content: center; align-items: center;-->
+<div class="father4">
+    <div class="son4">我是块级元素4</div>
+</div>
+
+<!--已知高度和宽度的元素-->
+<!--1、父元素相对定位;子元素绝对定位，top: 0; right: 0; bottom: 0; left: 0; margin: auto;-->
+    <div class="father1">
+        <div class="son1">我是块级元素1</div>
+    </div>
+<!--2、父元素相对定位;子元素绝对定位，left: 50%; top: 50%; margin-left: -元素宽度的一半px; margin-top: -元素高度的一半px;-->
+    <div class="father2">
+        <div class="son2">我是块级元素2</div>
+    </div>
+</body>
+</html>

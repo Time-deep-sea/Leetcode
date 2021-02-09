@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>垂直居中</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+        }
+        .father1{
+            width: 100%;
+            height: 300px;
+            margin-bottom: 5px;
+            background: darkgray;
+        }
+        .son1{
+            line-height: 300px;
+            background: darkturquoise;
+        }
+        .father2{
+            width: 500px;
+            height: 300px;
+            /*margin-bottom: 5px;*/
+            /*对于father3没有效果*/
+            background: darkgray;
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .son2{
+            background: darkturquoise;
+        }
+        .father3{
+            width: 500px;
+            height: 300px;
+            position: relative;
+            margin-bottom: 5px;
+            background: bisque;
+        }
+        .son3{
+            position: absolute;
+            height: 100px;
+            top:50%;
+            margin-top: -50px;
+            background: darkturquoise;
+            line-height: 100px;
+        }
+        .father4{
+            width: 100%;
+            height: 300px;
+            margin-bottom: 5px;
+            background: darkgray;
+            position: relative;
+        }
+        .son4{
+            position: absolute;
+            height: 100px;
+            top:50%;
+            background: darkturquoise;
+            transform: translateY(-50%);
+            line-height: 100px;
+        }
+        .father5{
+            width: 100%;
+            height: 300px;
+            /*margin-bottom: 5px;*/
+            background: darkgray;
+            display: flex;
+            align-items: center;
+        }
+        .son5{
+            /*高度可定可不定*/
+            /*width: 150px;*/
+            /*height: 100px;*/
+            /*line-height: 100px;*/
+            background: darkturquoise;
+        }
+    </style>
+</head>
+<body>
+<!--垂直居中-->
+<!--单行的行内元素居中：只需要设置单行行内元素的"行高等于盒子的高"即可-->
+    <div class="father1">
+        <div class="son1">我是单行的行内元素</div>
+    </div>
+<!--多行的行内元素：给父元素设置display:table-cell;和vertical-align: middle;即可-->
+    <div class="father2">
+        <div class="son2">我是多行的行内元素我是多行的行内元素我是多行的行内元素我是多行的行内元素我是多行的行内元素我是多行的行内元素我是多行的行内元素我是多行的行内元素</div>
+    </div>
+<!--块级元素-使用定位:父元素为相对定位，子元素为绝对定位，子元素的top: 50%，即让子元素的左上角垂直居中-->
+<!--定高度：设置绝对子元素的 margin-top: -元素高度的一半;或者设置transform: translateY(-50%);-->
+    <div class="father3">
+        <div class="son3">我是块级元素1</div>
+    </div>
+<!--不定高度：利用css3新增属性transform: translateY(-50%);-->
+    <div class="father4">
+        <div class="son4">我是块级元素2</div>
+    </div>
+<!--使用flexbox(高度定不定都可):只需给待处理的块状元素的父元素添加display: flex; align-items: center;-->
+    <div class="father5">
+        <div class="son5">我是块级元素3</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>水平居中</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+        }
+        .father1{
+            width: 100%;
+            height: 200px;
+            background: darkgray;
+            text-align: center;
+            margin-bottom:5px;
+        }
+        .son1,.son2{
+            /*设置宽度无用*/
+            height: 100px;
+            background: darkturquoise;
+        }
+        .father2{
+            display: block;
+            width: 100%;
+            height: 200px;
+            background: darkgray;
+            text-align: center;
+            margin-bottom:5px;
+        }
+        .father3{
+            width: 100%;
+            height: 200px;
+            background: darkgray;
+            margin-bottom:5px;
+        }
+        .son3{
+            width: 150px;
+            height: 100px;
+            text-align: center;
+            background: darkturquoise;
+            margin: 0 auto; /*作用：使盒子自己居中*/
+        }
+        .father4{
+            width: 100%;
+            height: 200px;
+            background: darkgray;
+            margin-bottom:5px;
+            text-align: center;
+        }
+        .son4{
+            /*内容的高度撑起了.son的高度，设置高度无用*/
+            display: inline;
+            background: darkturquoise;
+        }
+        .father5{
+            width: 100%;
+            height: 200px;
+            background: darkgray;
+            margin-bottom:5px;
+            display: flex;
+            justify-content: center;
+        }
+        .son5{
+            background: darkturquoise;
+            /*宽度定不定都可以*/
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<!--水平居中-->
+<!--父元素为块级元素，直接设置text-align: center;-->
+    <div class="father1">
+        <div class="son1">我是行内元素1</div>
+    </div>
+<!--父元素不是块级元素，先设置为块级元素display:block;再设置text-align: center;-->
+    <div class="father2">
+        <div class="son2">我是行内元素2</div>
+    </div>
+<!--块级元素-定宽度：需要谁居中，给其设置 margin: 0 auto; （作用：使盒子自己居中）-->
+    <div class="father3">
+        <div class="son3">我是块级元素&定宽</div>
+    </div>
+<!--不定宽度：默认子元素的宽度和父元素一样，这时需要设置子元素为display: inline-block;
+ 或 display: inline;即将其转换成行内块级/行内元素，给父元素设置 text-align: center; -->
+    <div class="father4">
+        <div class="son4">我是块级元素&不定宽</div>
+    </div>
+<!--使用flexbox布局(宽度定不定都可以)：只需给待处理的块状元素的父元素添加 display: flex; justify-content: center;-->
+    <div class="father5">
+        <div class="son5">我是块级元素（宽度定不定都可以）</div>
+    </div>
+</body>
+</html>s

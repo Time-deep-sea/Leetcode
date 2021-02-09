@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ee204c31-955c-4a92-af44-b2b5b43a8fd4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/数组去重.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/数组扁平化.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/数组排序.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/双飞翼布局.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/圣杯布局.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/垂直居中.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/水平&amp;垂直居中.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/水平居中.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/n.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/去掉重复的字符输出.js" beforeDir="false" afterPath="$PROJECT_DIR$/去掉重复的字符输出.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -45,7 +46,7 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
   </component>
-  <component name="RunManager" selected="Node.js.数组排序.js">
+  <component name="RunManager">
     <configuration name="数组扁平化.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/数组扁平化.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -63,11 +64,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.数组排序.js" />
-        <item itemvalue="Node.js.数组去重.js" />
-        <item itemvalue="Node.js.冒泡排序.js" />
         <item itemvalue="Node.js.数组扁平化.js" />
-        <item itemvalue="Node.js.去掉重复的字符输出.js" />
       </list>
     </recent_temporary>
   </component>
@@ -85,7 +82,10 @@
       <workItem from="1612233703199" duration="16884000" />
       <workItem from="1612273431453" duration="516000" />
       <workItem from="1612406214071" duration="16431000" />
-      <workItem from="1612679217028" duration="13593000" />
+      <workItem from="1612679217028" duration="13660000" />
+      <workItem from="1612764638852" duration="6320000" />
+      <workItem from="1612786823435" duration="2196000" />
+      <workItem from="1612858347888" duration="10088000" />
     </task>
     <servers />
   </component>
